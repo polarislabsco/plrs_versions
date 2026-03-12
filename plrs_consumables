@@ -1,2 +1,12 @@
-version: 1.0.3
-version_description: Move drunk stages and vehicle interactions into Config.Drunk and add Config.UseRCoreDrunk flag; update Drunk logic to read settings from config, throttle vehicle interactions, and use SetTimeout for pause handling. Add rcore_drunk integration gate and warn if enabled but missing. Implement manual item animation/prop spawning while progress bar runs (attach/delete props and clear tasks after), and disable progressBar's built-in anim/prop fields. Rename debug flag usage to Config.Debug. Add a new animation entry (mp_suicide::pill) and bump fxmanifest version to 1.0.3. Minor misc. fixes and cleanup across client files.
+version: 1.0.4
+version_description: "Add support for playing audio when using consumable items via xsound and UI/server persistence. Highlights:
+
+- Add bridge/audio/cl-xsound.lua and bridge/audio/sv-xsound.lua to integrate with the xsound resource and broadcast/play positional audio.
+- Expose new audio fields in item creation/edit flows: audioLink, audioVolume, audioLooped, audioReplicated; update client UI (cl-creation) to collect these values and validate audio URLs.
+- Client now plays configured audio when an item is used (cl-main) and skips playback when the player has hands-up emote.
+- Add IsValidAudioUrl and audio extension whitelist in client utils; rename image-related helpers for clarity.
+- Persist audio metadata on server create/edit (sv-creation) and broadcast play requests from server (sv-xsound).
+- Add Config.SoundResource and update fxmanifest (version bump + add bridge to escrow_ignore).
+- Minor tweaks: drunk config gains hasVehicleEffects flag and client drunk behavior checks it; add debugPrint logging for used items and remove raw json print.
+
+This enables configurable audio-on-use for consumables while ensuring hosts/extensions are validated and audio can be replicated to nearby players when requested."
