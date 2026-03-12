@@ -1,5 +1,5 @@
 version: 1.0.4
-version_description: Add support for playing audio when using consumable items via xsound and UI/server persistence. Highlights:
+version_description: Add support for playing audio when using consumable items via xsound and UI/server persistence.
 
 - Add bridge/audio/cl-xsound.lua and bridge/audio/sv-xsound.lua to integrate with the xsound resource and broadcast/play positional audio.
 - Expose new audio fields in item creation/edit flows: audioLink, audioVolume, audioLooped, audioReplicated; update client UI (cl-creation) to collect these values and validate audio URLs.
