@@ -1,2 +1,2 @@
-version: 1.0.8
-version_description: Introduce a saveJson(data) helper to centralize saving ItemData to data.json and replace repeated SaveResourceFile calls in create/edit/delete handlers. Add an InsertItemData export to allow programmatic insertion (with optional override) of item entries, generate unique IDs, populate fields, and persist changes. Also bump resource version from 1.0.7 to 1.0.8.
+version: 1.0.9
+version_description: Renamed/moved an INSTALL file and added server/sv-utils.lua; fxmanifest.lua and server/sv-main.lua were updated accordingly to reflect these changes.
