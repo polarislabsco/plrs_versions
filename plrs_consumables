@@ -1,2 +1,2 @@
-version: 1.0.7
-version_description: Add a complete INSTALL copy of ox_inventory server module (INSTALL/ox_inventory/modules/inventory/server.lua) and INSTALL/server.lua. The new server file implements the Inventory API, persistence/load/save, vehicle trunks/gloveboxes, stashes, grid placement, item resolution, weight/durability handling, and many exports (Inventory, GetInventory, AddItem, GetItem, etc.). Also update fxmanifest.lua, client/cl-drunk.lua and README.md to reflect these changes.
+version: 1.0.8
+version_description: Introduce a saveJson(data) helper to centralize saving ItemData to data.json and replace repeated SaveResourceFile calls in create/edit/delete handlers. Add an InsertItemData export to allow programmatic insertion (with optional override) of item entries, generate unique IDs, populate fields, and persist changes. Also bump resource version from 1.0.7 to 1.0.8.
