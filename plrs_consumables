@@ -1,2 +1,2 @@
-version: 1.0.5
-version_description: Add a duration (1800) to the 'pill' animation entry so its length is defined. Also set metadata.decay = true in sv-main when an item has a degrade value, marking items to use decay behavior.
+version: 1.0.7
+version_description: Add a complete INSTALL copy of ox_inventory server module (INSTALL/ox_inventory/modules/inventory/server.lua) and INSTALL/server.lua. The new server file implements the Inventory API, persistence/load/save, vehicle trunks/gloveboxes, stashes, grid placement, item resolution, weight/durability handling, and many exports (Inventory, GetInventory, AddItem, GetItem, etc.). Also update fxmanifest.lua, client/cl-drunk.lua and README.md to reflect these changes.
