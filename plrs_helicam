@@ -1,3 +1,2 @@
-version: 1.0.0
-version_description: Initial release
-files_changed: client.lua, fxmanifest.lua, server.lua
+version: 1.0.1
+version_description: Repository moved to https://github.com/blamefilo/filo_helicam
